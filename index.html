@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Simetrix · Hub digital de Paid Media</title>
-<meta name="description" content="Simetrix es un hub digital de estrategia Paid Media full funnel: performance, social media, creatividad, growth y análisis de datos.">
-<meta property="og:title" content="Simetrix · Hub digital de Paid Media">
-<meta property="og:description" content="Estrategia digital full funnel para marcas que quieren crecer de verdad.">
+<title>Simetrix · Growth marketing</title>
+<meta name="description" content="Simetrix es un estudio de growth marketing: estrategia, pauta, contenido, creatividad y datos, del primer clic a la recompra.">
+<meta property="og:title" content="Simetrix · Growth marketing">
+<meta property="og:description" content="Estrategia digital para marcas que quieren crecer de verdad. Del primer clic a la recompra.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#101114">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -30,7 +30,7 @@ a{color:inherit;text-decoration:none}
 img,svg{display:block}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 var(--g)}
 .label{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:10px}
-.label::before{content:"";width:18px;height:2px;background:var(--accent);transform:skewY(-17deg)}
+.label::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent);flex:none}
 h1,h2,h3{font-weight:400;letter-spacing:-.025em;line-height:1.02}
 h2{font-size:clamp(34px,5vw,60px)}
 .btn{display:inline-flex;align-items:center;gap:10px;height:52px;padding:0 24px;border-radius:999px;font-weight:400;font-size:16px;transition:transform .2s,background .2s,color .2s;white-space:nowrap}
@@ -176,9 +176,9 @@ footer{padding:70px 0 40px;border-top:1px solid var(--line)}
 @keyframes heroIn{to{opacity:1;transform:none}}
 /* etiquetas: la línea azul se dibuja y entra el texto */
 .label.rv{transform:translateX(-10px);transition:opacity .6s ease .15s,transform .6s var(--ease) .15s}
-.label.rv::before{transform:skewY(-17deg) scaleX(0);transform-origin:left;transition:transform .5s var(--wipe)}
+.label.rv::before{transform:scale(0);transform-origin:center;transition:transform .5s var(--wipe)}
 .label.rv.in{transform:none}
-.label.rv.in::before{transform:skewY(-17deg) scaleX(1)}
+.label.rv.in::before{transform:scale(1)}
 /* títulos de sección: suben desde una máscara */
 h2.rv{opacity:1;transform:translateY(.3em);clip-path:inset(0 0 100% 0);transition:clip-path .9s var(--wipe),transform .9s var(--ease)}
 h2.rv.in{clip-path:inset(-.5em -.5em -.5em -.5em);transform:none}
@@ -257,7 +257,7 @@ form.rv>:nth-child(5){transition-delay:.24s}form.rv>:nth-child(6){transition-del
   *{animation:none!important;transition:none!important}
   .blade,.rv,.rv>*,.rv .fact,.rv .bar i,.rv svg.bg,.hero h1.split .w>span,.hero .hero-copy-in{opacity:1!important;transform:none!important;clip-path:none!important;filter:none!important}
   .rv::after{transform:none!important}
-  .label.rv::before{transform:skewY(-17deg)!important}
+  .label.rv::before{transform:none!important}
 }
 </style>
 </head>
@@ -290,9 +290,9 @@ form.rv>:nth-child(5){transition-delay:.24s}form.rv>:nth-child(6){transition-del
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <div class="label">Hub digital · Paid Media full funnel</div>
+        <div class="label">Growth marketing · Del primer clic a la recompra</div>
         <h1>Estrategia digital para marcas que quieren <em>crecer de verdad.</em></h1>
-        <p class="lead">Paid media, contenido, creatividad y datos trabajando como un solo sistema. Resultados que escalan.</p>
+        <p class="lead">Conseguimos clientes, los convertimos y hacemos que vuelvan a comprar. Estrategia, pauta, contenido, creatividad y datos como un solo sistema.</p>
         <div class="ctas">
           <a href="#contacto" class="btn btn-primary">Quiero escalar mi marca <svg><use href="#arrow"/></svg></a>
           <a href="#servicios" class="btn btn-ghost">Ver servicios</a>
@@ -305,16 +305,16 @@ form.rv>:nth-child(5){transition-delay:.24s}form.rv>:nth-child(6){transition-del
       </svg>
     </div>
     <div class="facts rv">
-      <div class="fact"><b>+10 años</b><span>de experiencia de cada especialista</span></div>
+      <div class="fact"><b>+12 años</b><span>de experiencia de cada especialista</span></div>
       <div class="fact"><b>LATAM · EU · USA</b><span>mercados en los que operamos</span></div>
-      <div class="fact"><b>Full funnel</b><span>de la primera impresión a la venta</span></div>
+      <div class="fact"><b>Ciclo completo</b><span>de la adquisición a la recompra</span></div>
     </div>
   </div>
 </section>
 
 <div class="clients" id="trayectoria" aria-label="Trayectoria">
   <div class="label">Trayectoria</div>
-  <p class="clients-sub">Más de 10 años gestionando estrategias digitales para marcas como estas, en LATAM, Europa y USA.</p>
+  <p class="clients-sub">Más de 12 años gestionando estrategias digitales para marcas como estas, en LATAM, Europa y USA.</p>
   <div class="track">
     <span>Banco Hipotecario</span><span><i>/</i></span><span>Black&amp;Decker</span><span><i>/</i></span><span>Remington</span><span><i>/</i></span><span>Grupo Newsan</span><span><i>/</i></span><span>Auna Salud</span><span><i>/</i></span><span>Aprende Institute</span><span><i>/</i></span><span>Solventa Fintech</span><span><i>/</i></span><span>Leone Loray</span><span><i>/</i></span><span>Vitahub</span><span><i>/</i></span><span>Prototype</span><span><i>/</i></span><span>La Cardeuse</span><span><i>/</i></span><span>Juanita Jo</span><span><i>/</i></span>
     <span aria-hidden="true">Banco Hipotecario</span><span aria-hidden="true"><i>/</i></span><span aria-hidden="true">Black&amp;Decker</span><span aria-hidden="true"><i>/</i></span><span aria-hidden="true">Remington</span><span aria-hidden="true"><i>/</i></span><span aria-hidden="true">Grupo Newsan</span><span aria-hidden="true"><i>/</i></span><span aria-hidden="true">Auna Salud</span><span aria-hidden="true"><i>/</i></span><span aria-hidden="true">Aprende Institute</span><span aria-hidden="true"><i>/</i></span><span aria-hidden="true">Solventa Fintech</span><span aria-hidden="true"><i>/</i></span><span aria-hidden="true">Leone Loray</span><span aria-hidden="true"><i>/</i></span><span aria-hidden="true">Vitahub</span><span aria-hidden="true"><i>/</i></span><span aria-hidden="true">Prototype</span><span aria-hidden="true"><i>/</i></span><span aria-hidden="true">La Cardeuse</span><span aria-hidden="true"><i>/</i></span><span aria-hidden="true">Juanita Jo</span><span aria-hidden="true"><i>/</i></span>
@@ -327,8 +327,8 @@ form.rv>:nth-child(5){transition-delay:.24s}form.rv>:nth-child(6){transition-del
     <div class="about-grid">
       <h2 class="rv">Ayudamos a marcas a vender más <span>y mejor.</span></h2>
       <div class="about-text rv">
-        <p>Somos un <strong>hub digital enfocado en estrategia de Paid Media</strong>, con integración entre performance, social media, creatividad, growth y análisis de datos.</p>
-        <p>Nuestro enfoque es estratégico, medible y ejecutado con calidad premium. El diferencial es la excelencia: <strong>cada estrategia la ejecutan especialistas con más de 10 años de experiencia</strong> en LATAM, Europa y USA.</p>
+        <p>Somos un <strong>estudio de growth marketing</strong>: estrategia, performance, social media, creatividad y análisis de datos trabajando como un solo sistema, desde que el cliente te descubre hasta que vuelve a comprar.</p>
+        <p>Nuestro enfoque es estratégico, medible y ejecutado con calidad premium. El diferencial es la excelencia: <strong>cada estrategia la ejecutan especialistas con más de 12 años de experiencia</strong> en LATAM, Europa y USA.</p>
       </div>
     </div>
     <div class="pillars">
@@ -344,12 +344,12 @@ form.rv>:nth-child(5){transition-delay:.24s}form.rv>:nth-child(6){transition-del
     <div class="svc-head">
       <div>
         <div class="label rv">Servicios</div>
-        <h2 class="rv" style="margin-top:22px">Un solo equipo,<br>todo el funnel.</h2>
+        <h2 class="rv" style="margin-top:22px">Un solo equipo,<br>todo el ciclo del cliente.</h2>
       </div>
       <p class="rv">Soluciones integrales para potenciar tu presencia digital y maximizar el retorno de cada peso invertido.</p>
     </div>
     <div class="svc-list">
-      <div class="svc rv"><div class="num">01</div><h3>Estrategia &amp; Growth</h3><div><p>Definimos el plan de crecimiento: objetivos, funnel, mix de canales y presupuesto, con testing continuo para escalar lo que funciona.</p><div class="tags"><span>Plan de medios</span><span>Funnel &amp; customer journey</span><span>CRO</span><span>Testing A/B</span></div></div></div>
+      <div class="svc rv"><div class="num">01</div><h3>Estrategia &amp; Growth</h3><div><p>Definimos el plan de crecimiento: objetivos, funnel, mix de canales y presupuesto, con testing continuo para escalar lo que funciona.</p><div class="tags"><span>Plan de medios</span><span>Funnel &amp; customer journey</span><span>CRO</span><span>Retención &amp; recompra</span><span>Testing A/B</span></div></div></div>
       <div class="svc rv"><div class="num">02</div><h3>Paid Media</h3><div><p>Campañas optimizadas para maximizar el retorno de inversión y llegar a tu audiencia ideal.</p><div class="tags"><span>Google Ads</span><span>Meta Ads</span><span>TikTok Ads</span><span>LinkedIn &amp; X Ads</span><span>Programmatic</span><span>Afiliados</span></div></div></div>
       <div class="svc rv"><div class="num">03</div><h3>Social Media &amp; Contenido</h3><div><p>Estrategias de contenido que conectan con tu audiencia y fortalecen tu marca en redes.</p><div class="tags"><span>Gestión de redes</span><span>Creación de contenido</span><span>Community management</span></div></div></div>
       <div class="svc rv"><div class="num">04</div><h3>Diseño &amp; Creatividad</h3><div><p>Piezas visuales que transmiten la esencia de tu marca y frenan el scroll.</p><div class="tags"><span>Diseño gráfico</span><span>Identidad visual</span><span>Producción audiovisual</span></div></div></div>
@@ -414,7 +414,7 @@ form.rv>:nth-child(5){transition-delay:.24s}form.rv>:nth-child(6){transition-del
     <div class="foot">
       <div>
         <a href="#inicio" class="brand"><svg viewBox="0 0 182 200" aria-hidden="true"><use href="#mark"/></svg>Simetrix</a>
-        <p>Hub digital enfocado en estrategia de Paid Media, con integración entre performance, social media, creatividad, growth y datos.</p>
+        <p>Estudio de growth marketing: estrategia, performance, social media, creatividad y datos como un solo sistema.</p>
       </div>
       <ul>
         <li><a href="#nosotros">Nosotros</a></li><li><a href="#proceso">Proceso</a></li>
