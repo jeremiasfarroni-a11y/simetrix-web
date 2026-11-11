@@ -58,20 +58,20 @@ header.scrolled{background:rgba(244,242,237,.86);backdrop-filter:blur(14px);-web
 .menu-open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 
 /* hero */
-.hero{padding:150px 0 70px;position:relative}
-.hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:40px;align-items:center}
-.hero h1{font-size:clamp(44px,7.4vw,104px);margin:22px 0 28px}
-.hero h1 em{font-style:normal;color:var(--accent)}
+.hero{padding:132px 0 64px;position:relative}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(220px,320px);gap:clamp(40px,6vw,96px);align-items:center}
+.hero h1{font-size:clamp(38px,5.4vw,80px);margin:22px 0 26px;text-wrap:balance}
+.hero h1 em{font-style:normal;color:var(--accent);white-space:nowrap}
 .hero p.lead{font-size:clamp(18px,1.6vw,21px);color:var(--muted);max-width:520px}
 .hero .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:36px}
-.mark-big{width:100%;max-width:360px;justify-self:end}
+.mark-big{width:100%;max-width:320px;justify-self:end}
 .mark-big path{fill:var(--ink)}
 .blade{opacity:0;animation:blade .9s cubic-bezier(.2,.7,.2,1) forwards}
 .blade:nth-child(1){animation-delay:.15s;--dx:-30px}
 .blade:nth-child(2){animation-delay:.3s;--dx:30px}
 .blade:nth-child(3){animation-delay:.45s;--dx:-30px}
 @keyframes blade{from{opacity:0;transform:translateX(var(--dx))}to{opacity:1;transform:none}}
-.facts{margin-top:80px;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}
+.facts{margin-top:64px;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}
 .fact{padding:22px 24px 0 0}
 .fact+.fact{padding-left:24px;border-left:1px solid var(--line)}
 .fact b{display:block;font-family:var(--num);font-size:clamp(24px,2.6vw,34px);font-weight:800;letter-spacing:-.02em}
@@ -235,6 +235,7 @@ form.rv>:nth-child(5){transition-delay:.24s}form.rv>:nth-child(6){transition-del
   .menu-open header{background:var(--paper)}
   .hero{padding-top:120px}
   .hero-grid{grid-template-columns:1fr}
+  .hero h1{font-size:clamp(40px,7.4vw,64px)}
   .mark-big{display:none}
   .about-grid,.contact-grid{grid-template-columns:1fr;gap:36px}
   .pillars{grid-template-columns:1fr}
@@ -250,6 +251,18 @@ form.rv>:nth-child(5){transition-delay:.24s}form.rv>:nth-child(6){transition-del
   .steps{grid-template-columns:1fr}
   form{grid-template-columns:1fr}
   .hero .ctas .btn{width:100%;justify-content:center}
+  .hero{padding:108px 0 48px}
+  .hero h1{font-size:clamp(34px,10vw,44px);margin:18px 0 20px}
+  .hero h1 em{white-space:normal}
+  .hero p.lead{font-size:17px}
+  .hero .ctas{margin-top:28px}
+  .facts{margin-top:44px}
+  .hero .label{align-items:flex-start;font-size:11px;letter-spacing:.02em;line-height:1.6}
+  .hero .label::before{margin-top:6px}
+  .hero .label .l1{display:block}
+  .hero .label .sep{display:none}
+  .wa{right:16px;bottom:16px;width:50px;height:50px}
+  .wa svg{width:25px;height:25px}
   .ci{flex-direction:column;align-items:flex-start;gap:4px}
   .ci a,.ci span{text-align:left}
 }
@@ -290,7 +303,7 @@ form.rv>:nth-child(5){transition-delay:.24s}form.rv>:nth-child(6){transition-del
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <div class="label">Growth marketing · Entendemos negocios. Impulsamos crecimiento.</div>
+        <div class="label"><span class="lt"><span class="l1">Growth marketing</span><span class="sep"> · </span><span>Entendemos negocios. Impulsamos crecimiento.</span></span></div>
         <h1>Estrategia digital para marcas que quieren <em>crecer de verdad.</em></h1>
         <p class="lead">Conseguimos clientes, los convertimos y hacemos que vuelvan a comprar. Estrategia, pauta, contenido, creatividad y datos como un solo sistema.</p>
         <div class="ctas">
